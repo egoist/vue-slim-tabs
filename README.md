@@ -8,6 +8,8 @@
 yarn add vue-slim-tabs
 ```
 
+CDN: [UNPKG](https://unpkg.com/vue-slim-tabs/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-slim-tabs/dist/)
+
 ## Usage
 
 ```vue
