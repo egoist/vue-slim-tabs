@@ -34,6 +34,9 @@ yarn add vue-slim-tabs
     }
   }
 </script>
+
+<!-- optionally use our default style -->
+<style src="vue-slim-tabs/themes/default.css"></style>
 ```
 
 You can use it as a plugin if you don't mind registering components globally:

@@ -16,7 +16,7 @@
   },
   "files": [
     "dist",
-    "tabs.css"
+    "themes"
   ],
   "scripts": {
     "test": "echo 'no tests!' && npm run lint",
