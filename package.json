@@ -1,0 +1,54 @@
+{
+  "name": "vue-slim-tabs",
+  "version": "0.0.0",
+  "description": "Simple tabs component for Vue.js",
+  "repository": {
+    "url": "egoist/vue-slim-tabs",
+    "type": "git"
+  },
+  "main": "dist/vue-slim-tabs.common.js",
+  "unpkg": "dist/vue-slim-tabs.js",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "productName": "vue-slim-tabs",
+    "homepage": "/vue-slim-tabs/"
+  },
+  "files": [
+    "dist",
+    "tabs.css"
+  ],
+  "scripts": {
+    "test": "echo 'no tests!' && npm run lint",
+    "prepublish": "npm run build",
+    "lint": "xo",
+    "build": "bili --format cjs --format umd --compress --banner --js babel",
+    "build:example": "poi build",
+    "dev": "poi",
+    "deploy": "npm run build:example && gh-pages -d example/dist"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bili": "^0.16.0-rc.1",
+    "eslint-config-rem": "^3.0.0",
+    "gh-pages": "^1.0.0",
+    "poi": "^8.1.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem"
+  },
+  "babel": {
+    "presets": [
+      [
+        "vue-app",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  }
+}
