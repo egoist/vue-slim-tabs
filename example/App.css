@@ -1,0 +1,13 @@
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.my-tabs {
+  margin-top: 40px;
+}
+
+.fade {
+  color: #999;
+  font-size: 12px;
+}

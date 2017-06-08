@@ -1,6 +1,16 @@
 <template>
   <div id="app">
-    <tabs>
+    <github slug="egoist/vue-slim-tabs" />
+    <h1>vue-slim-tabs</h1>
+    <p>
+      <strong>A slim tab component for Vue.js, brought by
+        <a href="https://github.com/egoist">EGOIST</a>
+      </strong>
+    </p>
+    <p class="fade">
+      > 1.3 kB minified (418 bytes gzipped).
+    </p>
+    <tabs class="my-tabs">
       <tab title="Vue">
         <p>Vue (pronounced /vjuː/, like
           <strong>view</strong>) is a
@@ -27,6 +37,7 @@
 </template>
 
 <script>
+import GitHub from 'vue-github-badge'
 import {
   Tabs,
   Tab
@@ -35,9 +46,18 @@ import {
 export default {
   components: {
     Tabs,
-    Tab
+    Tab,
+    Github: GitHub
   }
 }
 </script>
 
 <style src="../themes/default.css"></style>
+
+<style>
+body {
+  font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+</style>
+
+<style scoped src="./App.css"></style>
