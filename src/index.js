@@ -21,12 +21,12 @@ export const Tabs = {
     }
   },
   render() {
-    const children = this.$slots.default.filter(child => {
-      return child.componentOptions && child.componentOptions.tag === 'tab'
-    })
+    const tabs = this.$slots.default.filter(
+      component => component.componentOptions
+    )
 
     const tabList = []
-    children.forEach((child, index) => {
+    tabs.forEach((child, index) => {
       tabList.push(
         <li
           class="vue-tab"
@@ -44,7 +44,7 @@ export const Tabs = {
         <ul class="vue-tablist" role="tablist">
           {this.$slots.left}{tabList}{this.$slots.right}
         </ul>
-        {children[this.selectedIndex]}
+        {tabs[this.selectedIndex]}
       </div>
     )
   }
