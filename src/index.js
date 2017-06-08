@@ -17,7 +17,7 @@ export const Tabs = {
   methods: {
     switchTab(e, index) {
       this.selectedIndex = index
-      this.onSelect && onSelect(e, index)
+      this.onSelect && this.onSelect(e, index)
     }
   },
   render() {
