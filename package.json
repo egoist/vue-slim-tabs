@@ -1,6 +1,6 @@
 {
   "name": "vue-slim-tabs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple tabs component for Vue.js",
   "repository": {
     "url": "egoist/vue-slim-tabs",
@@ -41,7 +41,9 @@
   },
   "xo": {
     "extends": "rem/prettier",
-    "ignores": ["example/**"]
+    "ignores": [
+      "example/**"
+    ]
   },
   "babel": {
     "presets": [
