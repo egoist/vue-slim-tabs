@@ -40,4 +40,4 @@ export default {
 }
 </script>
 
-<style src="../tabs.css"></style>
+<style src="../themes/default.css"></style>
