@@ -28,13 +28,13 @@ CDN: [UNPKG](https://unpkg.com/vue-slim-tabs/dist/) | [jsDelivr](https://cdn.jsd
 </template>
 
 <script>
-  import { Tabs, Tab } from 'vue-slim-tabs'
+import { Tabs, Tab } from 'vue-slim-tabs'
 
-  export default {
-    components: {
-      Tabs, Tab
-    }
+export default {
+  components: {
+    Tabs, Tab
   }
+}
 </script>
 
 <!-- optionally use our default style -->
