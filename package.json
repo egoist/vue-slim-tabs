@@ -11,7 +11,6 @@
   "poi": {
     "entry": "example/index.js",
     "dist": "example/dist",
-    "productName": "vue-slim-tabs",
     "homepage": "/vue-slim-tabs/"
   },
   "files": [
