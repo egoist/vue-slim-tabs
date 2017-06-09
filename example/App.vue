@@ -32,6 +32,9 @@
           <em>build time</em>. That means you don't pay the performance cost of the framework's abstractions, or incur a penalty when your app first loads.</p>
         <p>And because there's no overhead, you can easily adopt Svelte in an existing app incrementally, or ship widgets as standalone packages that work anywhere.</p>
       </tab>
+      <tab title="Angular" disabled>
+        No, not angular.
+      </tab>
     </tabs>
   </div>
 </template>

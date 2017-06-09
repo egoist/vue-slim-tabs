@@ -15,9 +15,11 @@ export const Tabs = {
     }
   },
   methods: {
-    switchTab(e, index) {
-      this.selectedIndex = index
-      this.onSelect && this.onSelect(e, index)
+    switchTab(e, index, isDisabled) {
+      if (!isDisabled) {
+        this.selectedIndex = index
+        this.onSelect && this.onSelect(e, index)
+      }
     }
   },
   render() {
@@ -27,14 +29,17 @@ export const Tabs = {
 
     const tabList = []
     tabs.forEach((child, index) => {
+      const { title, disabled } = child.componentOptions.propsData
+      const isDisabled = disabled === true || disabled === ''
       tabList.push(
         <li
           class="vue-tab"
           role="tab"
-          onClick={e => this.switchTab(e, index)}
+          onClick={e => this.switchTab(e, index, isDisabled)}
           aria-selected={this.selectedIndex === index ? 'true' : 'false'}
+          aria-disabled={isDisabled ? 'true' : 'false'}
         >
-          {child.componentOptions.propsData.title}
+          {title}
         </li>
       )
     })
@@ -52,7 +57,7 @@ export const Tabs = {
 
 export const Tab = {
   name: 'tab',
-  props: ['title'],
+  props: ['title', 'disabled'],
   render() {
     return (
       <div class="vue-tabpanel" role="tabpanel">

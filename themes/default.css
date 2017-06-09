@@ -21,3 +21,8 @@
   border-color: #e2e2e2;
   border-bottom-color: transparent;
 }
+
+.vue-tab[aria-disabled="true"] {
+  cursor: not-allowed;
+  color: #999;
+}

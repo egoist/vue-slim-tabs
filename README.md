@@ -74,6 +74,22 @@ function onSelect(e, index) {
 }
 ```
 
+### `<Tab>`
+
+#### title
+
+Type: `string` `vNode`<br>
+Required: `true`
+
+Use a string or vNode as tab title.
+
+#### disabled
+
+Type: `Boolean`<br>
+Default: `undefined`
+
+Disable relevant tab, i.e. make it unselectable.
+
 ## Contributing
 
 1. Fork it!
