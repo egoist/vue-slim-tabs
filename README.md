@@ -90,6 +90,16 @@ Default: `undefined`
 
 Disable relevant tab, i.e. make it unselectable.
 
+## Development
+
+Run the example with [Poi](https://poi.js.org):
+
+```bash
+cd vue-slim-tabs
+yarn
+yarn dev
+```
+
 ## Contributing
 
 1. Fork it!
