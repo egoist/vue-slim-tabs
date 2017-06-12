@@ -30,10 +30,10 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "bili": "^0.16.0-rc.1",
+    "bili": "^0.16.0-rc.2",
     "eslint-config-rem": "^3.0.0",
     "gh-pages": "^1.0.0",
-    "poi": "^8.1.4",
+    "poi": "^9.0.2",
     "rollup-plugin-babel": "^2.7.1",
     "vue-github-badge": "^1.0.0",
     "xo": "^0.18.0"

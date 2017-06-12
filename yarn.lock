@@ -790,9 +790,9 @@ big.js@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/big.js/-/big.js-3.1.3.tgz#4cada2193652eb3ca9ec8e55c9015669c9806978"
 
-bili@^0.16.0-rc.1:
-  version "0.16.0-rc.1"
-  resolved "https://registry.npmjs.org/bili/-/bili-0.16.0-rc.1.tgz#13629cfffe93ce74e0ebb794a717149eaf00a708"
+bili@^0.16.0-rc.2:
+  version "0.16.0-rc.2"
+  resolved "https://registry.npmjs.org/bili/-/bili-0.16.0-rc.2.tgz#dc75fcf7f9ed47488aa37afdce54fea221e102cd"
   dependencies:
     cac "^3.0.4"
     camelcase "^4.1.0"
@@ -3920,9 +3920,9 @@ poi-load-config@^1.1.0:
     postcss-load-config "^1.2.0"
     use-config "^1.0.0"
 
-poi@^8.1.4:
-  version "8.1.4"
-  resolved "https://registry.npmjs.org/poi/-/poi-8.1.4.tgz#40d2ead57346f8372879f7f88a84e7dc41f7e81e"
+poi@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.npmjs.org/poi/-/poi-9.0.2.tgz#98d5b9eea197096a555ab65909ef06576fbd96c1"
   dependencies:
     address "^1.0.1"
     autoprefixer "^7.1.1"
