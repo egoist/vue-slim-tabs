@@ -29,8 +29,10 @@ export const Tabs = {
 
     const tabList = []
     tabs.forEach((child, index) => {
-      const { title, disabled } = child.componentOptions.propsData
+      const { title, titleSlot, disabled } = child.componentOptions.propsData
+      const content = titleSlot ? this.$slots[titleSlot] : title
       const isDisabled = disabled === true || disabled === ''
+
       tabList.push(
         <li
           class="vue-tab"
@@ -39,7 +41,7 @@ export const Tabs = {
           aria-selected={this.selectedIndex === index ? 'true' : 'false'}
           aria-disabled={isDisabled ? 'true' : 'false'}
         >
-          {title}
+          {content}
         </li>
       )
     })
@@ -57,7 +59,7 @@ export const Tabs = {
 
 export const Tab = {
   name: 'tab',
-  props: ['title', 'disabled'],
+  props: ['title', 'titleSlot', 'disabled'],
   render() {
     return (
       <div class="vue-tabpanel" role="tabpanel">

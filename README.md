@@ -49,6 +49,23 @@ import * as Tabs from 'vue-slim-tabs'
 Vue.use(Tabs)
 ```
 
+<details><summary>Use a slot as tab title</summary><br>
+
+```vue
+<template>
+  <tabs>
+    <tab title-slot="vue">
+      This is Vue
+    </tab>
+
+    <template slot="vue">
+      <strong>Vue</strong>
+    </template>
+  </tabs>
+</template>
+```
+</details>
+
 ## Props
 
 ### `<Tabs>`
@@ -79,9 +96,15 @@ function onSelect(e, index) {
 #### title
 
 Type: `string` `vNode`<br>
-Required: `true`
+Required: required unless `titleSlot` is set
 
 Use a string or vNode as tab title.
+
+#### titleSlot
+
+Type: `string`
+
+Use a slot as the tab title.
 
 #### disabled
 
