@@ -10,6 +10,9 @@
     <p class="fade">
       > 1.3 kB minified (418 bytes gzipped).
     </p>
+    <label class="enable-angular">
+      <input type="checkbox" v-model="angular"> Enable augular tab
+    </label>
     <tabs class="my-tabs">
 
       <template slot="react">React</template>
@@ -38,7 +41,7 @@
         <p>And because there's no overhead, you can easily adopt Svelte in an existing app incrementally, or ship widgets as standalone packages that work anywhere.</p>
       </tab>
 
-      <tab title="Angular" disabled>
+      <tab title="Angular" :disabled="!angular">
         No, not angular.
       </tab>
 
@@ -54,6 +57,12 @@ import {
 } from '../src'
 
 export default {
+  data() {
+    return {
+      angular: false
+    }
+  },
+
   components: {
     Tabs,
     Tab,
