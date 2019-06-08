@@ -36,7 +36,7 @@
     "poi": "^9.0.2",
     "rollup-plugin-babel": "^2.7.1",
     "vue-github-badge": "^1.0.0",
-    "xo": "^0.18.0"
+    "xo": "^0.24.0"
   },
   "xo": {
     "extends": "rem/prettier",
