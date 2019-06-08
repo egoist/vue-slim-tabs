@@ -6,12 +6,16 @@
     "url": "egoist/vue-slim-tabs",
     "type": "git"
   },
-  "main": "dist/vue-slim-tabs.common.js",
+  "module": "dist/vue-slim-tabs.esm.js",
+  "main": "dist/vue-slim-tabs.cjs.js",
   "unpkg": "dist/vue-slim-tabs.js",
+  "jsdelivr": "dist/vue-slim-tabs.js",
+  "cdn": "dist/vue-slim-tabs.js",
   "poi": {
     "entry": "example/index.js",
-    "dist": "example/dist",
-    "homepage": "/vue-slim-tabs/"
+    "output": {
+      "dir": "example/dist"
+    }
   },
   "files": [
     "dist",
@@ -21,37 +25,32 @@
     "test": "echo 'no tests!' && npm run lint",
     "prepublish": "npm run build",
     "lint": "xo",
-    "build": "bili --format cjs --format umd --compress --banner --js babel",
-    "build:example": "poi build",
-    "dev": "poi",
-    "deploy": "npm run build:example && gh-pages -d example/dist"
+    "build": "bili",
+    "build:example": "poi --prod",
+    "dev": "poi -so"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "bili": "^0.16.0-rc.2",
-    "eslint-config-rem": "^3.0.0",
-    "gh-pages": "^2.0.1",
-    "poi": "^9.0.2",
-    "rollup-plugin-babel": "^2.7.1",
+    "bili": "^4.8.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "poi": "^12.6.10",
+    "prettier": "^1.18.2",
+    "vue": "^2.6.10",
     "vue-github-badge": "^1.0.0",
+    "vue-template-compiler": "^2.6.10",
     "xo": "^0.24.0"
   },
   "xo": {
-    "extends": "rem/prettier",
+    "extends": [
+      "rem",
+      "plugin:prettier/recommended"
+    ],
     "ignores": [
       "example/**"
-    ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "vue-app",
-        {
-          "useBuiltIns": true
-        }
-      ]
     ]
   }
 }
