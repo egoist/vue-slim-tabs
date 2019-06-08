@@ -33,7 +33,7 @@
     "bili": "^0.16.0-rc.2",
     "eslint-config-rem": "^3.0.0",
     "gh-pages": "^1.0.0",
-    "poi": "^9.0.2",
+    "poi": "^12.6.10",
     "rollup-plugin-babel": "^2.7.1",
     "vue-github-badge": "^1.0.0",
     "xo": "^0.18.0"
