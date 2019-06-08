@@ -30,7 +30,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "bili": "^0.16.0-rc.2",
+    "bili": "^4.8.0",
     "eslint-config-rem": "^3.0.0",
     "gh-pages": "^1.0.0",
     "poi": "^9.0.2",
