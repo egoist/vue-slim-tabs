@@ -32,7 +32,7 @@
   "devDependencies": {
     "bili": "^0.16.0-rc.2",
     "eslint-config-rem": "^3.0.0",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "poi": "^9.0.2",
     "rollup-plugin-babel": "^2.7.1",
     "vue-github-badge": "^1.0.0",
