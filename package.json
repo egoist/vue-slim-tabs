@@ -11,6 +11,7 @@
   "unpkg": "dist/vue-slim-tabs.js",
   "jsdelivr": "dist/vue-slim-tabs.js",
   "cdn": "dist/vue-slim-tabs.js",
+  "types": "types/vue-slim-tabs.d.ts",
   "poi": {
     "entry": "example/index.js",
     "output": {
@@ -19,7 +20,8 @@
   },
   "files": [
     "dist",
-    "themes"
+    "themes",
+    "types"
   ],
   "scripts": {
     "test": "echo 'no tests!' && npm run lint",
