@@ -5,8 +5,8 @@ export const Tab: TabConstructor;
 export const install: PluginFunction<{}>;
 
 export interface TabsProps {
-  defaultIndex: number;
-  onSelect: (val: any) => void;
+  defaultIndex?: number;
+  onSelect?: (val: any) => void;
 }
 
 export interface TabsData {
@@ -18,9 +18,9 @@ export interface TabsMethods {
 }
 
 export interface TabProps {
-  title: string;
-  titleSlot: string;
-  disabled: boolean;
+  title?: string;
+  titleSlot?: string;
+  disabled?: boolean;
 }
 
 export interface TabsConstructor extends VueConstructor {
