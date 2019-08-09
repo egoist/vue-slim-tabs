@@ -14,7 +14,7 @@ export interface TabsData {
 }
 
 export interface TabsMethods {
-  switchTable: (e: Event, index: number, isDisabled: boolean) => void;
+  switchTab: (e: Event, index: number, isDisabled: boolean) => void;
 }
 
 export interface TabProps {
