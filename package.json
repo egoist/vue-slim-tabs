@@ -44,7 +44,7 @@
     "vue": "^2.6.10",
     "vue-github-badge": "^1.0.0",
     "vue-template-compiler": "^2.6.10",
-    "xo": "^0.24.0"
+    "xo": "^0.33.1"
   },
   "xo": {
     "extends": [
