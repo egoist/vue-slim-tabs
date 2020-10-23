@@ -11,7 +11,7 @@
       > 1.3 kB minified (418 bytes gzipped).
     </p>
     <label class="enable-angular">
-      <input type="checkbox" v-model="angular"> Enable augular tab
+      <input type="checkbox" v-model="angular"> Enable angular tab
     </label>
     <tabs class="my-tabs">
 
