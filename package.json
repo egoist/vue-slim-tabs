@@ -36,7 +36,7 @@
   "dependencies": {},
   "devDependencies": {
     "bili": "^4.8.0",
-    "eslint-config-prettier": "^6.1.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-rem": "^4.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "poi": "^12.6.10",
