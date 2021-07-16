@@ -11,9 +11,9 @@
       > 1.3 kB minified (418 bytes gzipped).
     </p>
     <label class="enable-angular">
-      <input type="checkbox" v-model="angular"> Enable augular tab
+      <input type="checkbox" v-model="angular"> Enable angular tab
     </label>
-    <tabs class="my-tabs">
+    <tabs class="my-tabs" :onSelect="handleTabSelected">
 
       <template slot="react">React</template>
 
@@ -46,6 +46,7 @@
       </tab>
 
     </tabs>
+    <WithJSX />
   </div>
 </template>
 
@@ -55,6 +56,7 @@ import {
   Tabs,
   Tab
 } from '../src'
+import WithJSX from './WithJSX'
 
 export default {
   data() {
@@ -66,7 +68,14 @@ export default {
   components: {
     Tabs,
     Tab,
+    WithJSX,
     Github: GitHub
+  },
+
+  methods: {
+    handleTabSelected(e, index) {
+      console.log(e, index);
+    }
   }
 }
 </script>

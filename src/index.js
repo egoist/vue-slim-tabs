@@ -16,10 +16,13 @@ export const Tabs = {
   },
   methods: {
     switchTab(e, index, isDisabled) {
-      if (!isDisabled) {
-        this.selectedIndex = index;
-        this.onSelect && this.onSelect(e, index);
+      if (isDisabled || this.selectedIndex === index) {
+        return;
       }
+
+      this.selectedIndex = index;
+      this.onSelect && this.onSelect(e, index);
+      this.$emit("select", e, index);
     }
   },
   render() {
