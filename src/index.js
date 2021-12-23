@@ -9,6 +9,19 @@ export const Tabs = {
       type: Function
     }
   },
+  mounted() {
+    if (this.$route.query.tab) {
+      const tabs = this.$slots.default
+        .filter(component => component.componentOptions)
+        .map(component => component.componentOptions.propsData.title);
+
+      const index = tabs.findIndex(title => title === this.$route.query.tab);
+
+      if (index) {
+        this.switchTab(undefined, index);
+      }
+    }
+  },
   data() {
     return {
       selectedIndex: this.defaultIndex
@@ -19,6 +32,24 @@ export const Tabs = {
       if (!isDisabled) {
         this.selectedIndex = index;
         this.onSelect && this.onSelect(e, index);
+
+        const tabs = this.$slots.default
+          .filter(component => {
+            return component.componentOptions;
+          })
+          .map(component => {
+            return component.componentOptions.propsData.title;
+          });
+
+        const query = {};
+        for (const q of new URL(window.location).searchParams) {
+          query[q[0]] = q[1];
+        }
+
+        this.$router.push({
+          path: new URL(window.location).pathname,
+          query: { ...query, tab: tabs[index] }
+        });
       }
     }
   },
